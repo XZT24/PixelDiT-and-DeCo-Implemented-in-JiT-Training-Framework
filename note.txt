@@ -1,0 +1,12 @@
+1.额外安装一个包
+	conda activate jit
+	cd DPT/ops
+	python setup.py build install
+
+2.更换 train.sh的data_path
+
+3.deco_model/repa_encoder.py第21行，切换dino路径，首次使用可能需要下载，之后切回下载的路径即可
+
+4. sh train.sh开始训练
+
+5. tensorboard --logdir ./eval_check6 查看训练日志
